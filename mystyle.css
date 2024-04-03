@@ -1,0 +1,105 @@
+* {
+    font-family: "Yeon Sung", system-ui;
+    margin: 5px;              /* 외부 여백 */
+    padding: 5px;             /* 내부 여백 */
+    box-sizing: border-box; /* 박스에 패딩 테두리 포함  */
+    font-size: 20px;                /* 글자 크기 */
+    letter-spacing: 1px;            /* 글자 간격 */
+}
+
+/********************/
+/** header  **/
+/********************/
+header {
+    background-color: #333;
+    background-image: linear-gradient(to right, #ffffff, #ff69b4); 
+    color: #020202;
+    padding: 5px 0;
+    position: fixed;    /* 고정 위치 설정 */
+    width: 100%;        /* 너비 100% */
+    top: 0;             /* 페이지 맨 위에 위치 */
+    z-index: 1000;      /* 다른 요소보다 앞에 배치*/
+    display: flex;      /* 제목과 내비게이션 가로 배치 */
+    justify-content: space-between; /* 제목과 내비게이션을 양쪽 끝으로 정렬 */
+    align-items: center; /* 플렉스 안 수직 정렬 가운데 */
+}
+/** 제목 **/
+.main-title {
+    margin: 0 10px;            /* 제목 좌우 여백 */
+    font-size: 30px;
+}
+/** 내비게이션 **/
+nav ul {
+    display: flex;            /* 내비게이션 메뉴 가로 배치 */
+}
+.nav-btn {
+    color: #fff;            /* 버튼 글자색 */
+    padding: 5px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: #555; /* 버튼색 */
+    border: none;             /* 테두리 제거 */
+    cursor: pointer;          /* 마우스 커서 손모양으로 변경 */
+}
+.nav-btn:hover {
+    background-color: #777; /*마우스 올릴때 버튼색*/
+}
+
+/********************/
+/** section  **/
+/********************/
+section {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;   /* 내부 요소 수직 배치*/
+    justify-content: center;  /* 내부 요소 수평 가운데 정렬 */
+    text-align: center;       /* 내부 요소 수직 가운데 정렬 */
+}
+.section-title {
+    font-size: 40px;
+}
+
+/** section-main  **/
+#main {
+    color: rgb(255, 216, 251);        /* 텍스트 색상을 흰색으로 설정 */
+    background: #444; /* 배경을 다크 그레이로 설정 */
+    background: linear-gradient(to bottom, #FFC0CB, #444); /* 연핑크와 다크 그레이의 수직 방향 그라데이션 */
+    -webkit-background-clip: text; /* 텍스트에 그라데이션 적용 */
+    -webkit-text-fill-color: transparent; /* 텍스트 색상을 투명하게 */
+    background-size: cover; /* 배경 이미지 화면 가득 채우기 */
+}
+
+
+#main h4{
+    font-size: 25px;
+}
+#main h5{
+    font-size: 40px;
+}
+
+/** section-about  **/
+#about {
+    margin-top: 50px; /* 헤더와 "MYLOVE" 섹션 사이의 간격을 늘립니다. */
+}
+
+/** section-mylove  **/
+#mylove {
+    /* MYLOVE 섹션에 대한 스타일을 추가합니다. */
+}
+
+#about img {
+    width: 500px; /* 이미지 너비를 400px로 설정합니다. */
+    margin: 10px auto; /* 이미지를 가운데 정렬 */
+}
+
+/** section-gallery  **/
+#gallery #big {
+    width: 500px;
+    margin: 10px auto;
+}
+
+#gallery .small {
+    width: 300px;
+    height: 300px;
+    margin: 1px auto;
+}
